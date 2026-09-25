@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Patro Nepal</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card-bg: #f8fafc;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #2563eb;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --primary: #3b82f6;
+        --border: #334155;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--bg);
+    }
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px;
+      border: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    th {
+      background-color: var(--card-bg);
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 4px;
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Application:</strong> Patro Nepal (<code>com.app.patronepal</code>)<br>
+      <strong>Effective Date:</strong> September 25, 2026</p>
+    </header>
+
+    <p>Welcome to <strong>Patro Nepal</strong> ("we," "our," or "us"). We are strongly committed to protecting your privacy. This Privacy Policy details how our mobile application handles your information.</p>
+
+    <div class="card">
+      <strong>Key Summary:</strong> Patro Nepal is an <strong>offline-first application</strong>. We do <strong>not</strong> collect, track, or share any personal information. All your personal reminders, notes, and preferences remain strictly on your physical device.
+    </div>
+
+    <h2>1. Zero Data Collection & Offline-First Operation</h2>
+    <ul>
+      <li><strong>No Personally Identifiable Information (PII):</strong> We do not ask for or collect names, email addresses, phone numbers, contact lists, or physical locations.</li>
+      <li><strong>No Analytics or Trackers:</strong> We do not integrate third-party tracking libraries, advertising SDKs, or behavior trackers (such as Firebase Analytics, Google Analytics, or Meta SDK).</li>
+      <li><strong>No Account Required:</strong> You do not need to register, create an account, or log in to use all features of the application.</li>
+    </ul>
+
+    <h2>2. On-Device Local Data Storage</h2>
+    <p>All data created inside the application is stored entirely on your local device:</p>
+    <ul>
+      <li><strong>Personal Reminders & Events:</strong> Any recurring events, anniversaries, or diary entries you create are stored in an encrypted/private local database (<a href="https://isar.dev" target="_blank" rel="noopener">Isar Database</a>). This data is never sent to the internet.</li>
+      <li><strong>User Preferences:</strong> Settings such as language (Nepali/English), calendar system (BS/AD), theme mode (Light/Dark), and widget style are stored locally using Android and iOS native preferences (<code>SharedPreferences</code>).</li>
+    </ul>
+
+    <h2>3. Device Permissions & Purpose</h2>
+    <p>Patro Nepal requests only the minimum system permissions necessary to operate:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Usage & Justification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>POST_NOTIFICATIONS</code><br><span class="badge">Android 13+</span></td>
+          <td>Used exclusively to display scheduled reminder alarms you create and to show the optional daily persistent notification bar showing today's date and tithi.</td>
+        </tr>
+        <tr>
+          <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+          <td>Used solely to re-register and schedule your existing local reminder alarms whenever your device reboots.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We <strong>do not</strong> request access to Camera, Microphone, Contacts, Photo Library, or GPS Location.</p>
+
+    <h2>4. Children’s Privacy</h2>
+    <p>Patro Nepal is compliant with the Children’s Online Privacy Protection Act (COPPA) and General Data Protection Regulation (GDPR). Because our application collects zero personal information, it is safe for users of all ages, including children.</p>
+
+    <h2>5. Data Retention & Deletion</h2>
+    <p>Since all data resides on your physical hardware:</p>
+    <ul>
+      <li>You can edit or delete individual events and reminders at any time inside the app.</li>
+      <li>Clearing the app's cache/storage or uninstalling the app permanently erases all locally saved records immediately.</li>
+    </ul>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to accommodate new features or regulatory requirements. Any modifications will be posted to this page with an updated effective date.</p>
+
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions or inquiries about this Privacy Policy, please contact us at:</p>
+    <div class="card">
+      <p><strong>App:</strong> Patro Nepal</p>
+      <p><strong>Package ID:</strong> <code>com.app.patronepal</code></p>
+      <p><strong>Support Email:</strong> <a href="mailto:support@patronepal.app">support@patronepal.app</a></p>
+    </div>
+
+    <footer>
+      &copy; 2026 Patro Nepal. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
